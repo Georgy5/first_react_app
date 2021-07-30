@@ -3,10 +3,15 @@ import axios from 'axios';
 
 const App = () => {
   const [users, setUsers] = useState([])
+  const [message, setMessage] = useState('')
 
   const fetchUsers = async () => {
-    const response = await axios.get('https://reqres.in/api/users')
-    setUsers(response.data.data);
+    try {   
+      const response = await axios.get('https://reqres.in/api/users')
+      setUsers(response.data.data);
+    } catch (error) {
+      debugger
+    }
   }
 
   useEffect(() => {
@@ -23,6 +28,7 @@ const App = () => {
       <ul data-cy="users-list">
         {usersList}
       </ul>
+      <div data-cy="message">{message}</div>
     </div>
   )
 }

@@ -23,13 +23,13 @@ const App = () => {
   });
 
   return (
-    <div>
+    <React.Fragment>
       <h1>Users</h1>
       <ul data-cy="users-list">
         {usersList}
       </ul>
       <div data-cy="message">{message}</div>
-    </div>
+    </React.Fragment>
   )
 }
 

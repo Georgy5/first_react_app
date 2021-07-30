@@ -5,7 +5,7 @@ const App = () => {
   const [users, setUsers] = useState([])
 
   const fetchUsers = async () => {
-    const response = await axios.get('https://reqres.in/api/users?page=1')
+    const response = await axios.get('https://reqres.in/api/users')
     setUsers(response.data.data);
   }
 

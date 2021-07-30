@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 describe("User that visits app", () => {
   before(() => {
+    cy.intercept("**/api/users", { fixture: "users_response.json" });
     cy.visit("/");
   });
 

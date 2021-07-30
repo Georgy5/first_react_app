@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Hello World</h1>
+      <h1>Users</h1>
       <ul data-cy="users-list">
         {usersList}
       </ul>

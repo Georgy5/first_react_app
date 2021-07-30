@@ -9,6 +9,6 @@ describe("User that visits app", () => {
   });
 
   it('is expected to display information about 6 users', () => {
-    cy.get('[data-cy=users-list]').children.should('have.length', 6);
+    cy.get('[data-cy=users-list]').children().should('have.length', 6);
   });
 });

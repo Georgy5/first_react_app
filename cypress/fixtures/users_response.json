@@ -6,43 +6,43 @@
   "data": [
     {
       "id": 1,
-      "email": "george.bluth@reqres.in",
+      "email": "thomas.bluth@agileventures.in",
       "first_name": "Thomas",
       "last_name": "Bluth",
       "avatar": "https://reqres.in/img/faces/1-image.jpg"
     },
     {
       "id": 2,
-      "email": "janet.weaver@reqres.in",
+      "email": "mirsad.weaver@agileventures.in.in",
       "first_name": "Mirsad",
       "last_name": "Weaver",
       "avatar": "https://reqres.in/img/faces/2-image.jpg"
     },
     {
       "id": 3,
-      "email": "emma.wong@reqres.in",
+      "email": "anya.wong@agileventures.in.in",
       "first_name": "Anya",
       "last_name": "Wong",
       "avatar": "https://reqres.in/img/faces/3-image.jpg"
     },
     {
       "id": 4,
-      "email": "eve.holt@reqres.in",
-      "first_name": "Eve",
+      "email": "carmen.holt@agileventures.in.in",
+      "first_name": "Carmen",
       "last_name": "Holt",
       "avatar": "https://reqres.in/img/faces/4-image.jpg"
     },
     {
       "id": 5,
-      "email": "charles.morris@reqres.in",
-      "first_name": "Charles",
+      "email": "mike.morris@agileventures.in.in",
+      "first_name": "Mike",
       "last_name": "Morris",
       "avatar": "https://reqres.in/img/faces/5-image.jpg"
     },
     {
       "id": 6,
-      "email": "tracey.ramos@reqres.in",
-      "first_name": "Tracey",
+      "email": "karl.ramos@agileventures.in.in",
+      "first_name": "Karl",
       "last_name": "Ramos",
       "avatar": "https://reqres.in/img/faces/6-image.jpg"
     }

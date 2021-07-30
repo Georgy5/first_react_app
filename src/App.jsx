@@ -10,11 +10,19 @@ const App = () => {
   }
 
   useEffect(() => {
+    fetchUsers();
   }, []);
+
+  let usersList = users.map((user) => {
+    return <li key={user.id}>{user.first_name}</li>;
+  });
 
   return (
     <div>
       <h1>Hello World</h1>
+      <ul data-cy="users-list">
+        {usersList}
+      </ul>
     </div>
   )
 }

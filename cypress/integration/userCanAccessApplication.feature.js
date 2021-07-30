@@ -6,8 +6,8 @@ describe("User that visits app", () => {
       cy.visit("/");
     });
 
-    it('is expected to see "Hello World"', () => {
-      cy.get("body").should("contain.text", "Hello World");
+    it('is expected to see "Users" header', () => {
+      cy.get("body").should("contain.text", "Users");
     });
 
     it('is expected to display information about 6 users', () => {
@@ -23,7 +23,7 @@ describe("User that visits app", () => {
         .should("contain.text", "Mirsad");
     });
   });
-  
+
   describe("and the API is not working (500 error)", () => {
     before(() => {
       cy.intercept("**/api/users", { statusCode: 500 });

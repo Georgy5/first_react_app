@@ -8,11 +8,13 @@ import configureStore from './state/store/configureStore';
 import ConnectedComponent from './ConnectedComponent';
 import HookedComponent from './HookedComponent';
 
+
 const store = configureStore();
-// for manual debugging: window.store = store;
+// for manual debugging in the Browser DevTools console
+// window.store = store;
 window.store = store;
 
-const root = ReactDOM.createRoot(
+ReactDOM.render(
     <Provider store = {store}>
         <ConnectedComponent />
         <HookedComponent />
@@ -20,4 +22,12 @@ const root = ReactDOM.createRoot(
     document.getElementById('root')
 );
 
+// For demoing the Hooks and connect APIs,
+// comment out the new root API
+/*
+const root = ReactDOM.createRoot(
+    document.getElementById('root')
+);
+
 root.render(<App />);
+*/

@@ -1,5 +1,5 @@
 const initialState = {
-  greeting: "Hell World"
+  greeting: "Hello World from Redux"
 };
 
 export default initialState; 

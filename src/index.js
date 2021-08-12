@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import ConnectedComponent from './ConnectedComponent';
-import HookedComponent from './HookedComponent';
 import { Provider } from 'react-redux';
+
+import App from './App';
 import configureStore from './state/store/configureStore';
 
+import ConnectedComponent from './ConnectedComponent';
+import HookedComponent from './HookedComponent';
 
 const store = configureStore();
 // for manual debugging: window.store = store;

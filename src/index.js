@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
-import App from './App';
+// import App from './App';
 import configureStore from './state/store/configureStore';
 
-import ConnectedComponent from './ConnectedComponent';
+// import ConnectedComponent from './ConnectedComponent';
 import HookedComponent from './HookedComponent';
 
 
@@ -16,7 +16,6 @@ window.store = store;
 
 ReactDOM.render(
     <Provider store = {store}>
-        <ConnectedComponent />
         <HookedComponent />
     </Provider>,
     document.getElementById('root')

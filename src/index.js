@@ -7,7 +7,7 @@ import configureStore from './state/store/configureStore';
 
 // import ConnectedComponent from './ConnectedComponent';
 import HookedComponent from './HookedComponent';
-
+import GreetingDisplay from './GreetingDisplay';
 
 const store = configureStore();
 // for manual debugging in the Browser DevTools console
@@ -16,6 +16,7 @@ window.store = store;
 
 ReactDOM.render(
     <Provider store = {store}>
+        <GreetingDisplay />
         <HookedComponent />
     </Provider>,
     document.getElementById('root')

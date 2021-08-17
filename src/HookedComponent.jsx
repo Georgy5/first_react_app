@@ -1,13 +1,11 @@
-import React, { Fragment, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 
 const HookedComponent = () => {
-  const greeting = useSelector((state) => state.greeting);
   const [newGreeting, setNewGreeting] = useState('');
   const dispatch = useDispatch();
   return (
-    <Fragment>
-      {greeting}
+    <>
       <div>
         <input
           onChange={(event) => setNewGreeting(event.target.value)}
@@ -19,7 +17,7 @@ const HookedComponent = () => {
           }
         >Change greeting</button>
       </div>
-    </Fragment>
+    </>
   )
 };
 
